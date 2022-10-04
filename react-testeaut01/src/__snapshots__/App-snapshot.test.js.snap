@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`deve renderizar a página inicial para o usuario logado (Dagmar) 1`] = `
+<App
+  isLoggedIn={true}
+  username="Dagmar"
+>
+  <div
+    className="App"
+  >
+    <Home
+      tasks={
+        Array [
+          "8h00 - Assistir as aulas de Matematica na escola",
+          "12h30 - Encontrar Renata para o almoço",
+          "15h00 - Encontrar Fabio no Clube de Futebol",
+          "20h00 - Jantar à beira da piscina com Pedro e Lorena",
+        ]
+      }
+      username="Dagmar"
+    >
+      <div>
+        <p>
+          Bem-vindo, 
+          Dagmar
+          !
+        </p>
+        <ul>
+          <li
+            key="0"
+          >
+            8h00 - Assistir as aulas de Matematica na escola
+          </li>
+          <li
+            key="1"
+          >
+            12h30 - Encontrar Renata para o almoço
+          </li>
+          <li
+            key="2"
+          >
+            15h00 - Encontrar Fabio no Clube de Futebol
+          </li>
+          <li
+            key="3"
+          >
+            20h00 - Jantar à beira da piscina com Pedro e Lorena
+          </li>
+        </ul>
+      </div>
+    </Home>
+  </div>
+</App>
+`;
+
+exports[`deve renderizar a página inicial para o usuario logado sem tarefas 1`] = `
+<App
+  isLoggedIn={true}
+  username="Divaldo"
+>
+  <div
+    className="App"
+  >
+    <Home
+      username="Divaldo"
+    >
+      <div>
+        <p>
+          Bem-vindo, 
+          Divaldo
+          !
+        </p>
+        <ul />
+      </div>
+    </Home>
+  </div>
+</App>
+`;
+
+exports[`deve renderizar a página inicial para o usuario não logado 1`] = `
+<App
+  isLoggedIn={false}
+  username={null}
+>
+  <div
+    className="App"
+  >
+    <p>
+      Olá, visitante. Faça login para continuar.
+    </p>
+  </div>
+</App>
+`;
